@@ -59,7 +59,9 @@ app.get("/", (req, res) => {
 
 });
 
- 
+require("./app/routes/product.routes")(app);
+
+require("./app/routes/category.routes")(app);
 
 // set port, listen for requests
 
