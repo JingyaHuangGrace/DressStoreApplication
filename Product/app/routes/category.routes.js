@@ -7,43 +7,37 @@ module.exports = app => {
   
    
   
-    // Create a new Product
+    // Create a new category
   
     router.post("/", categories.create);
   
    
   
-    // Retrieve all Products
+    // Retrieve all Categories
   
     router.get("/", categories.findAll);
   
    
   
-    // Retrieve all published Products
-  
-    router.get("/published", categories.findAllPublished);
-  
-   
-  
-    // Retrieve a single Product with id
+    // Retrieve a single category with id
   
     router.get("/:id", categories.findOne);
   
    
   
-    // Update a Product with id
+    // Update a category with id
   
     router.put("/:id", categories.update);
   
    
   
-    // Delete a Product with id
+    // Delete a category with id
   
     router.delete("/:id", categories.delete);
   
    
   
-    // Delete all Products
+    // Delete all categories
   
     router.delete("/", categories.deleteAll);
   
